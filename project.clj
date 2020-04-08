@@ -10,13 +10,17 @@
     [lein-codox "0.10.3"] [lein-zprint "1.0.1"]]
   :profiles {:repl {:dependencies [#_[com.taoensso/tufte "1.1.1"]
                                    #_[org.clojure/clojurescript "1.9.946"]
+                                   [expound "0.8.4"]
+                                   [integrant "0.8.0"]
+                                   [integrant/repl "0.3.1"]
                                    ;[rum "0.10.8"];
                                    [better-cond "1.0.1"]
 				   [olical/cljs-test-runner "3.7.0"]
 				   [pjstadig/humane-test-output "0.10.0"]
 				   #_[zpst "0.1.6"]
                                    [org.clojure/core.match "0.3.0-alpha5"]
-                                   #_[clojure-future-spec "1.9.0-alpha17"]]},
+                                   #_[clojure-future-spec "1.9.0-alpha17"]]
+                    :source-paths ["dev"]},
 
 	     :dev {:dependencies [
 	                          [expectations/cljc-test "2.0.0-SNAPSHOT"]
