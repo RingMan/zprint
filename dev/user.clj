@@ -21,11 +21,13 @@
                      zprint-fn zprint-fn-str
                      czprint czprint-str czprint-fn czprint-fn-str
                      configure-all! set-options!]]
+            [zprint.rutil :refer :all]
             [zprint.ansi :refer [ansi-codes color-str]]))
 
 (set-refresh-dirs "src" "dev")
 
 (defn init []
+  (update-print-fn! render)
   :initialized)
 
 (defn reset []
