@@ -14,6 +14,7 @@
 				   #_[zpst "0.1.6"]
                                    [org.clojure/core.match "0.3.0-alpha5"]
                                    #_[clojure-future-spec "1.9.0-alpha17"]]},
+             :dev {:dependencies [[expectations "2.1.10"]]}
 	     :expectations {:dependencies [[expectations "2.1.10"]]}
              :uberjar {;:aot [zprint.core zprint.main],
                        ; For 1.9.0-alpha17, use this for the :aot value
