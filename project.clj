@@ -1,6 +1,6 @@
-(defproject zprint "1.0.1"
+(defproject ringman/zprint "1.0.2"
   :description "Pretty print zippers and s-expressions"
-  :url "https://github.com/kkinnear/zprint"
+  :url "https://github.com/RingMan/zprint"
   :license {:name "MIT License",
             :url "https://opensource.org/licenses/MIT",
             :key "mit",
@@ -42,7 +42,7 @@
   :jvm-opts ^:replace
             ["-server" "-Xms2048m" "-Xmx2048m" "-Xss500m"
              "-XX:-OmitStackTraceInFastThrow"]
-  :scm {:name "git", :url "https://github.com/kkinnear/zprint"}
+  :scm {:name "git", :url "https://github.com/RingMan/zprint"}
   :codox {:namespaces [zprint.core],
           :doc-files
             ["README.md" "doc/bang.md" "doc/graalvm.md" "doc/filter.md"],
