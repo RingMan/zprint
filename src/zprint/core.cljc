@@ -1138,7 +1138,7 @@
        ; Make sure to get trailing newlines by using -1
        (let [; If the filestring starts with #!, remove it and save it
              [shebang file-str] (remove-shebang file-str)
-             lines (clojure.string/split file-str #"\n" -1)
+             lines (clojure.string/split file-str #"\r\n|\r|\n" -1)
              lines (if (:expand? (:tab (get-options)))
                      (map (partial expand-tabs (:size (:tab (get-options))))
                        lines)
